@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
             config.vm.box = opts["box"]
             config.vm.box_version = opts["box_version"]
             config.vm.hostname = opts["name"]
-            config.vm.network :private_network, ip: opts["eth1"]
+            config.vm.network :public_network, ip: opts["eth1"], bridge: opts["port"]
 
             config.vm.provider "virtualbox" do |v|
                 v.name = opts["name"]

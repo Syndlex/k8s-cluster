@@ -5,20 +5,23 @@ servers:
   type: master
   box: ubuntu/xenial64
   box_version: 20200522.0.0
-  eth1: 192.168.205.10
+  eth1: 192.168.2.200
   mem: 2048
   cpu: 2
+  port: vnet0
 - name: k8s-worker-1
   type: worker
   box: ubuntu/xenial64
   box_version: 20200522.0.0
-  eth1: 192.168.205.11
+  eth1: 192.168.2.201
   mem: 2048
   cpu: 2
+  port: vnet1
 - name: k8s-worker-2
   type: worker
   box: ubuntu/xenial64
   box_version: 20200522.0.0
-  eth1: 192.168.205.12
+  eth1: 192.168.2.202
   mem: 2048
   cpu: 2
+  port: vnet2
