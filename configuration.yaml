@@ -8,7 +8,7 @@ servers:
   eth1: 192.168.2.200
   mem: 2048
   cpu: 2
-  port: vnet0
+   port: vnet1
 - name: k8s-worker-1
   type: worker
   box: ubuntu/xenial64
@@ -16,7 +16,7 @@ servers:
   eth1: 192.168.2.201
   mem: 2048
   cpu: 2
-  port: vnet1
+  port: vnet2
 - name: k8s-worker-2
   type: worker
   box: ubuntu/xenial64
@@ -24,4 +24,4 @@ servers:
   eth1: 192.168.2.202
   mem: 2048
   cpu: 2
-  port: vnet2
+  port: vnet3
